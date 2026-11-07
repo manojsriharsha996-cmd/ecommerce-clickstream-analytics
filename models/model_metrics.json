@@ -1,0 +1,97 @@
+{
+    "best_model": "Gradient Boosting",
+    "best_roc_auc": 0.9897,
+    "evaluation_metrics": {
+        "Random Forest": {
+            "accuracy": 0.8629,
+            "precision": 0.4725,
+            "recall": 0.9595,
+            "f1_score": 0.6332,
+            "roc_auc": 0.9715,
+            "confusion_matrix": [
+                [
+                    1787,
+                    317
+                ],
+                [
+                    12,
+                    284
+                ]
+            ]
+        },
+        "Gradient Boosting": {
+            "accuracy": 0.9692,
+            "precision": 0.9237,
+            "recall": 0.8176,
+            "f1_score": 0.8674,
+            "roc_auc": 0.9897,
+            "confusion_matrix": [
+                [
+                    2084,
+                    20
+                ],
+                [
+                    54,
+                    242
+                ]
+            ]
+        },
+        "Logistic Regression": {
+            "accuracy": 0.8875,
+            "precision": 0.5243,
+            "recall": 0.9459,
+            "f1_score": 0.6747,
+            "roc_auc": 0.9662,
+            "confusion_matrix": [
+                [
+                    1850,
+                    254
+                ],
+                [
+                    16,
+                    280
+                ]
+            ]
+        }
+    },
+    "feature_importances": {
+        "cart_to_view_ratio": 0.2876,
+        "avg_product_price": 0.2274,
+        "session_duration_seconds": 0.1985,
+        "cart_value": 0.1506,
+        "product_view_count": 0.0487,
+        "max_product_price": 0.0309,
+        "cart_add_count": 0.0205,
+        "browsing_events_count": 0.0154,
+        "browsing_dwell_seconds": 0.0074,
+        "max_dwell_seconds": 0.005,
+        "avg_dwell_per_event": 0.0036,
+        "hour_of_day": 0.0025,
+        "traffic_channel_Affiliate": 0.0004,
+        "device_Desktop": 0.0004,
+        "traffic_channel_Google Ads": 0.0003
+    },
+    "training_samples": 9600,
+    "test_samples": 2400,
+    "numeric_features": [
+        "session_duration_seconds",
+        "browsing_events_count",
+        "browsing_dwell_seconds",
+        "is_bounce",
+        "page_view_count",
+        "product_view_count",
+        "cart_add_count",
+        "max_product_price",
+        "avg_product_price",
+        "cart_value",
+        "max_dwell_seconds",
+        "avg_dwell_per_event",
+        "cart_to_view_ratio",
+        "hour_of_day",
+        "is_weekend"
+    ],
+    "categorical_features": [
+        "traffic_channel",
+        "device"
+    ]
+}
